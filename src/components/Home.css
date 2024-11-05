@@ -1,0 +1,91 @@
+.home {
+  text-align: center;
+  padding: 20px;
+}
+
+.home-header {
+  background-color: #61dafb;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.home-header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.home-header p {
+  font-size: 1.2em;
+}
+
+.home-overview,
+.home-features {
+  margin: 20px 0;
+}
+
+.home-overview h2,
+.home-features h2 {
+  font-size: 2em;
+  color: #282c34;
+}
+
+.home-features ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.home-features li {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.home-footer {
+  margin-top: 30px;
+}
+
+.home-footer button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #282c34;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.home-footer button:hover {
+  background-color: #61dafb;
+}
+
+/* home */
+.home-carousel {
+  margin-bottom: 20px; /* Add space below the carousel */
+  position: relative; /* Positioning for the animation */
+}
+
+.home-carousel img {
+  border-radius: 8px; /* Ensure images have rounded corners */
+  width: 100%; /* Full width */
+  height: 300px; /* Fixed height */
+  object-fit: cover; /* Cover the area while maintaining aspect ratio */
+  transition: transform 0.5s ease; /* Smooth transition for hover effect */
+}
+
+/* Scale up the image on hover */
+.home-carousel img:hover {
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Apply fade-in animation to images */
+.slick-slide img {
+  animation: fadeIn 0.5s ease forwards; /* Fade-in effect for each slide */
+}
